@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Project 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="bg-image">
+            <img src="https://images.pexels.com/photos/7130475/pexels-photo-7130475.jpeg" alt="">
+        </div>
+
+        <nav>
+            <div class="left-nav">
+                <h2>Logo</h2>
+            </div>
+            <div class="mid-nav">
+                <ul>
+                    <li><a href="#" style="color:white;">Home</a></li>
+                    <li>Gallery</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class="right-nav">
+                <button type="button" onclick="window.location.reload()">Login</button>
+
+                <button type="button" onclick="window.location.href='signup.html'">
+                    Sign Up
+                </button>
+            </div>
+        </nav>
+
+        <section class="login-form">
+            <h1 style="color:white;font-size: 40px;">Login</h1>
+            <form onsubmit="return formHandler()">
+                <div>
+                    <label>Username: </label>
+                    <input type="text" name="username" placeholder="Enter your username" id="username">
+                </div>
+
+                <div>
+                    <label>Password:</label>
+                    <input type="password" name="password" placeholder="Enter your password" id="password">
+                </div>
+                <input class="submit-btn" type="submit" value="Login">
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

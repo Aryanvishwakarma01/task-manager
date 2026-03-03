@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Project 1</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <main>
+        <div class="bg-image">
+            <img src="https://images.pexels.com/photos/7130475/pexels-photo-7130475.jpeg" alt="">
+        </div>
+
+        <nav>
+            <div class="left-nav">
+                <h2>Logo</h2>
+            </div>
+            <div class="mid-nav">
+                <ul>
+                    <li><a href="#" style="color:white;">Home</a></li>
+                    <li>Gallery</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class="right-nav">
+                <button type="button" onclick="window.location.href='index.html'">Login</button>
+
+                <button type="button" onclick="window.location.href='signup.html'">
+                    Sign Up
+                </button>
+            </div>
+        </nav>
+
+        <section class="login-form">
+            <h1 style="color:white;font-size: 40px;">Sign Up</h1>
+            <form onsubmit="return formHandler()">
+                <div>
+                    <label>First Name: </label>
+                    <input type="text" name="fname" placeholder="Enter your First Name" id="fname">
+                </div>
+
+                 <div>
+                    <label>Last Name: </label>
+                    <input type="text" name="lname" placeholder="Enter your Last Name" id="lname">
+                </div>
+
+                 <div>
+                    <label>Username: </label>
+                    <input type="text" name="username" placeholder="Set Username" id="username">
+                </div>
+
+                <div>
+                    <label>Password:</label>
+                    <input type="password" name="password" placeholder="Set Password" id="password">
+                </div>
+
+                <div>
+                    <label>Confirm Password:</label>
+                    <input type="password" name="cpassword" placeholder="Same as Password" id="cpassword">
+                </div>
+                <input class="submit-btn" type="submit" value="Register">
+
+                <div >
+                    <p id="error" style="color:yellow"></p>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="signup.js"></script>
+</body>
+
+</html>
