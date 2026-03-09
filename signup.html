@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Project 1</title>
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="./stylesheets/signup.css">
 </head>
 
 <body>
@@ -39,38 +39,43 @@
             <form onsubmit="return formHandler()">
                 <div>
                     <label>First Name: </label>
-                    <input type="text" name="fname" placeholder="Enter your First Name" id="fname">
+                    <input type="text" name="fname" placeholder="Enter your First Name" id="fname" minlength="3">
+                    <p id="fname_error" style="color:yellow;text-align:right;margin-top: 2px;margin-right: 5px;"></p>
                 </div>
 
                  <div>
                     <label>Last Name: </label>
                     <input type="text" name="lname" placeholder="Enter your Last Name" id="lname">
+                    <p id="lname_error" style="color:yellow;text-align:right;margin-top: 2px;margin-right: 5px;"></p>
                 </div>
 
                  <div>
                     <label>Username: </label>
                     <input type="text" name="username" placeholder="Set Username" id="username">
+                    <p id="username_error" style="color:yellow;text-align:right;margin-top: 2px;margin-right: 5px;"></p>
                 </div>
 
                 <div>
                     <label>Password:</label>
                     <input type="password" name="password" placeholder="Set Password" id="password">
+                    <p id="password_error" style="color:yellow;text-align:right;margin-top: 2px;margin-right: 5px;"></p>
                 </div>
 
                 <div>
                     <label>Confirm Password:</label>
                     <input type="password" name="cpassword" placeholder="Same as Password" id="cpassword">
+                    <p id="cpassword_error" style="color:yellow;text-align:right;margin-top: 2px;margin-right: 5px;"></p>
                 </div>
                 <input class="submit-btn" type="submit" value="Register">
 
-                <div >
+                <!-- <div >
                     <p id="error" style="color:yellow"></p>
-                </div>
+                </div> -->
             </form>
         </section>
     </main>
 
-    <script src="signup.js"></script>
+    <script src="./scripts/signup.js"></script>
 </body>
 
 </html>

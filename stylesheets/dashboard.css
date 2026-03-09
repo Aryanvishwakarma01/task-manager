@@ -1,0 +1,245 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+nav button {
+    padding: 8px 16px;
+    background-color: #ff4b5c;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background-color: #ff2a3c;
+}
+
+/* Main content */
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-direction: column; */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.welcomeMsg {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.addTask {
+    border: 2px solid rgb(255, 255, 255);
+    width: 30%;
+    background: linear-gradient(to bottom, rgb(96, 86, 182), rgb(133, 118, 216));
+    display: flex;
+    padding: 40px 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 30px;
+    height: 70vh;
+}
+
+.addTask form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.addTask form input[type="text"] {
+    padding: 6px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.336);
+    color: white;
+}
+
+.addTask form input::placeholder {
+    color: white;
+}
+
+.addTask form input[type="date"] {
+    padding: 6px;
+    color: white;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.336);
+}
+
+.addTask form input[type="submit"] {
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+}
+
+.addTask form input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+    transition: all ease 0.5s;
+
+}
+
+.manageTask {
+    border: 2px solid rgb(255, 255, 255);
+    width: 65%;
+    background: linear-gradient(to bottom, rgb(96, 86, 182), rgb(133, 118, 216));
+    display: flex;
+    padding: 40px 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 10px;
+    height: 70vh;
+}
+
+.manageTask form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.manageTask form input[type="search"] {
+    padding: 6px 50px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.336);
+    color: white;
+
+}
+
+.manageTask form input::placeholder {
+    color: white;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+#taskList {
+    width: 100%;
+    overflow-y: auto;
+}
+
+#taskList::-webkit-scrollbar {
+    width: 8px;
+}
+
+#taskList::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#taskList::-webkit-scrollbar-thumb {
+    background: #b8b6b6;
+    border-radius: 10px;
+}
+
+#taskList::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+#taskList>table {
+    table-layout: fixed;
+    width: 100%;
+    border-color: rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+
+#taskList>table tr {
+    width: 100%;
+}
+
+
+#taskList>table tr th {
+    padding: 5px;
+    word-break: break-word;
+
+}
+#taskList>table tr th:first-child {
+    width: 10%;
+    word-break: break-word;
+
+}
+
+#taskList>table tr td {
+    padding: 5px;
+    word-break: break-word;
+
+}
+
+.deleteBtn {
+    margin-right: 15px;
+    cursor: pointer;
+    border:1px solid rgb(0, 0, 0);
+    background-color: red;
+    color:white;
+    padding: 2px;
+}
+.deleteBtn:hover{
+    background-color: rgb(161, 5, 5);
+    transition: all ease 0.5s;
+}
+
+.doneBtn {
+    cursor: pointer;
+    border:1px solid rgb(0, 0, 0);
+    background-color: rgb(40, 211, 40);
+    color:white;
+    padding: 2px;
+}
+
+.doneBtn:hover{
+   background-color: rgb(4, 110, 4);
+   transition: all ease 0.5s;
+}
+
+.noTaskMsg{
+    color:white;
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+}

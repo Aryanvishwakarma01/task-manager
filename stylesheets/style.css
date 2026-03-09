@@ -73,7 +73,6 @@ nav {
 }
 
 .login-form {
-    margin-top: 50px;
     position: absolute;
     z-index: 2;
     width: 100%;
@@ -88,8 +87,8 @@ nav {
 .login-form>form {
     background-color: rgba(255, 255, 255, 0.158);
     display: flex;
-    width: 350px;
-    height: 400px;
+    width: 320px;
+    height: 220px;
     border-radius: 20px;
     border: none;
     gap: 35px;
@@ -104,6 +103,23 @@ nav {
     padding: 5px 10px;
     border: none;
 }
+
+.login-form>form input[type="text"]{
+    background-color: rgba(255, 255, 255, 0.068);
+    color:white;
+    border:none;
+    outline:none;
+}
+.login-form>form input[type="password"]{
+    background-color: rgba(255, 255, 255, 0.068);
+    color:white;
+    border:none;
+    outline:none;
+}
+.login-form>form input::placeholder{
+    color:rgb(168, 168, 168);
+}
+
 
 .submit-btn {
     font-size: 15px;
