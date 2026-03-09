@@ -20,6 +20,10 @@ main {
     position: fixed;
     inset: 0;
     z-index: -1;   /* push it behind everything */
+    opacity: 0.9;
+}
+#logo{
+    width: 180px;
 }
 
 .bg-image img {

@@ -27,6 +27,7 @@ main {
     height: 100%;
     object-fit: cover;
     pointer-events: none; /* 🔥 THIS IS IMPORTANT */
+    opacity: 0.9;
 }
 
 nav {
@@ -43,7 +44,9 @@ nav {
     color: white;
     font-size: 20px;
 }
-
+#logo{
+    width: 180px;
+}
 .mid-nav>ul {
     display: flex;
     list-style: none;

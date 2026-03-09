@@ -26,6 +26,9 @@ nav {
     position: sticky;
     top: 0;
 }
+#logo{
+    width: 180px;
+}
 
 nav h2 {
     font-size: 24px;
